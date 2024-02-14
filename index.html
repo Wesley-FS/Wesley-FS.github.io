@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/style_media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     
 
-    <title>Portifólio Wesley Silva</title>
+    <title>Portfólio Wesley Silva</title>
 </head>
 <body>
     <header>
@@ -37,7 +39,8 @@
         
         </nav>
     </header>
-    <main class = "homepage"id="home">
+    <main class = "homepage"id="home" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
         <section class="apresentacao">
             <h1 class = "titulo_apresentacao">Olá, meu nome é <strong class ="titulo_destaque"><br>Wesley Silva</strong></h1>
             <p class = "texto">Sou acadêmico de Análise e Desenvolvimento de Sistemas</p>
@@ -49,6 +52,7 @@
         <img src="./img/foto_perfil.jpg" alt="Wesley Silva" class="imgInicial">
 
     </main>
+    <div data-aos="fade-right" data-aos-duration="2500">
     <h1 class="titulo"id = "Sobre">Sobre mim</h1>
     <section class ="sobre-page">
         <div class="texto_sobre-page" >
@@ -58,7 +62,8 @@
         </div>
         <img src="./img/foto militar.jpg" alt="militar" >
     </section>
-
+    </div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
     <h1 class = "titulo_diferente"id = "experiencias">Experiências</h1>
 
     <section class = "experiencias">
@@ -99,6 +104,8 @@
         </div>
 
     </section>
+</div>
+<div data-aos="fade-up" data-aos-duration="1500">
     <h1 class = "titulo"id = "formacoes">Formações em Progresso</h1>
 
     <section class = "formacoes">
@@ -141,11 +148,7 @@
     
     
     </section>
-
-    <section>
-
-    </section>
-
+    </div>
 
     <footer id="footer">
         <section class="rodaPe">
@@ -160,7 +163,9 @@
         <p>wesleyfs7534@gmail.com</p>
         <p>© 2024 / Wesley Silva / Todos os direitos reservados.</p>
     </footer>
-
+    <script>
+        AOS.init();
+      </script>
 
 
 
